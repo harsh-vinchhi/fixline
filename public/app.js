@@ -71,7 +71,7 @@ function renderNav(user) {
 $('nav').innerHTML = '<div class="wrap bar"><a class="brand" href="index.html">Fixline</a></div>';   // shown for a split second
 ME.then(renderNav);
 
-$('foot').innerHTML = '<div class="grid"><div><h3>Fixline</h3><p>One place to report, track and fix apartment maintenance issues.</p></div><div><h3>Residents</h3><a href="login.html?tab=register">Create an account</a><br><a href="report.html">Report an issue</a><br><a href="how.html">Help and FAQ</a></div><div><h3>Team</h3><a href="login.html">Staff and manager login</a></div><div><h3>Project</h3><a href="about.html">The problem</a><br><a href="process.html">Design process</a></div></div><div class="foot-bottom"><span>Prototype for a design thinking assignment.</span><span>Made for <span class="edit">[course]</span> by <span class="edit">[your names]</span></span></div>';
+$('foot').innerHTML = '<div class="grid"><div><h3>Fixline</h3><p>One place to report, track and fix apartment maintenance issues.</p></div><div><h3>Residents</h3><a href="login.html?tab=register">Create an account</a><br><a href="report.html">Report an issue</a><br><a href="how.html">Help and FAQ</a></div><div><h3>Team</h3><a href="login.html">Staff and manager login</a></div><div><h3>Project</h3><a href="about.html">The problem</a><br><a href="process.html">Design process</a></div></div><div class="foot-bottom"><span>Prototype for a design thinking assignment.</span><span>Made for <span class="edit">Design Thinking</span> by <span class="edit">Harsh Vinchhi</span></span></div>';
 
 // Page guard. Pages with a private area contain <div id="auth"></div><div id="app" hidden>...</div>.
 // gate(['resident'], start): not logged in -> go to login. Wrong role -> explain. OK -> reveal #app and run start().
