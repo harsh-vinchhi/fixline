@@ -1,0 +1,11 @@
+<!DOCTYPE html><html lang="en"><head><title>Report an issue | Fixline</title><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Figtree:wght@400;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body data-page="report"><header class="top" id="nav"></header>
+<main class="wrap narrow"><div id="auth"></div><div id="app" hidden><h1>Report an issue</h1><p>Tell us what and where. We check whether someone already reported it.</p>
+<form id="f" class="box"><label for="title">What is the problem?</label><input type="text" id="title" required maxlength="140" placeholder="e.g. Water leaking from bathroom ceiling">
+<div class="two"><div><label for="loc">Where is it?</label><select id="loc"></select></div><div><label for="cat">What kind of problem is it?</label><select id="cat"></select></div></div>
+<label for="photo">Add a photo (optional)</label><input type="file" id="photo" accept="image/*"><fieldset class="radios" style="border:0;padding:0;margin:.9rem 0 0"><legend style="font-weight:600">How urgent is it?</legend>
+<label><input type="radio" name="pri" value="urgent"><span><b>Urgent:</b> safety risk, or no water or power</span></label>
+<label><input type="radio" name="pri" value="normal" checked><span><b>Normal:</b> affects daily life</span></label>
+<label><input type="radio" name="pri" value="low"><span><b>Low:</b> cosmetic, can wait</span></label></fieldset>
+<p style="margin-top:1rem"><button class="btn" type="submit">Submit report</button></p></form>
+<div class="box warn" id="dup" hidden aria-live="polite"></div><div class="box ok" id="ok" hidden aria-live="polite"></div></div></main>
+<footer class="wrap" id="foot"></footer><script src="app.js"></script></body></html>

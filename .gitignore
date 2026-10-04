@@ -1,0 +1,11 @@
+# never upload these
+node_modules/
+data/
+*.db
+*.db-wal
+*.db-shm
+.env
+.env.*
+!.env.example
+# kept on my own computer only
+GUIDE.md

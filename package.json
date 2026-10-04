@@ -1,0 +1,16 @@
+{
+  "name": "fixline",
+  "version": "1.0.0",
+  "description": "Fixline: apartment maintenance tracker (design thinking project)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node --env-file-if-exists=.env server.js",
+    "dev": "node --watch --env-file-if-exists=.env server.js"
+  },
+  "engines": {
+    "node": ">=22.13"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

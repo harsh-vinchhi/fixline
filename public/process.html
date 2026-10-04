@@ -1,0 +1,30 @@
+<!DOCTYPE html><html lang="en"><head><title>Design process | Fixline</title><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Figtree:wght@400;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body data-page="process"><header class="top" id="nav"></header>
+<main class="wrap"><h1>Design process</h1>
+<p>Our findings so far are <b>working hypotheses</b> until real users are interviewed. <span class="edit">Highlighted text</span> is for your real results.</p>
+<ol class="steps">
+<li data-n="1"><h2>Empathize</h2>
+<p>In apartment communities, problems are reported through WhatsApp, calls, security staff and face-to-face talks. There is no single flow for capturing, prioritizing, assigning and tracking a problem.</p>
+<div class="scroll"><table><tr><th>User</th><th>Needs</th><th>Main friction</th></tr><tr><td>Resident</td><td>Report and know what happens next</td><td>No status visibility</td></tr><tr><td>Maintenance staff</td><td>Clear requests with location and details</td><td>Requests arrive from many channels</td></tr><tr><td>Society manager</td><td>Prioritize, assign, monitor</td><td>No reliable overview</td></tr></table></div>
+<h3 style="margin-top:1rem">Persona: Aarav Mehta, 32, software engineer</h3><blockquote>I don't mind reporting the problem. I hate having to chase someone to find out what happened to it.</blockquote>
+<p>Goals: quick acknowledgement, know who handles it, know when it will be fixed, avoid repeated calls. Frustrations: complaints vanish in WhatsApp groups, he repeats himself, urgent and minor issues look the same.</p>
+<p>Journey today: leak starts, WhatsApp photo, waiting with no acknowledgement, follow-up call to the security desk, worker eventually assigned, fixed with no record.</p>
+<p>Interviews: <span class="edit">[number] residents, [number] staff, [number] managers. Add 3 to 5 real quotes.]</span></p></li>
+<li data-n="2"><h2>Define</h2>
+<p><b>Insight:</b> the communication process is fragmented, not merely the complaint form.</p>
+<blockquote>Apartment residents struggle to get maintenance issues resolved efficiently because complaints are reported through fragmented channels, making it difficult to track requests, identify responsibility, and receive timely updates.</blockquote>
+<p><b>How might we</b> make maintenance issues easier to report, easier to prioritize, and easier for residents to follow from report to resolution?</p></li>
+<li data-n="3"><h2>Ideate</h2><p>Each pain point from the research became a feature.</p>
+<div class="scroll"><table><tr><th>Pain point</th><th>Feature in Fixline</th></tr>
+<tr><td>Fragmented reporting</td><td>One report form for every issue</td></tr><tr><td>Duplicate complaints</td><td>Duplicate check with an "Add me" option</td></tr>
+<tr><td>Weak prioritization</td><td>Three priority levels with plain guidance</td></tr><tr><td>Missing ownership</td><td>Named owner on every issue</td></tr>
+<tr><td>No status visibility</td><td>Five-step progress tracker and expected date</td></tr><tr><td>Missing details for staff</td><td>Photo upload and exact location</td></tr><tr><td>No closure or trust</td><td>Resident rating after every fix</td></tr><tr><td>Staff juggling many sources</td><td>Staff page with jobs sorted by priority</td></tr><tr><td>No usable history</td><td>History log and recurring-problem alert</td></tr></table></div>
+<p>Ideas we rejected: <span class="edit">[e.g. a chatbot, a WhatsApp bot, and why]</span></p></li>
+<li data-n="4"><h2>Prototype</h2><p>This site is the prototype: <a href="report.html">Report</a>, <a href="track.html">My issues</a>, <a href="manager.html">Manager dashboard</a>. It has a Node.js backend and a SQLite database, with separate logins for residents, staff and managers. Paper sketches: <span class="edit">[add photos]</span></p></li>
+<li data-n="5"><h2>Test</h2>
+<p>Success means a resident can answer: what is the problem, where is it, who owns it, what happens next, and when will it be fixed. Ask <span class="edit">[5]</span> people to report and then find their issue.</p>
+<div class="scroll"><table><tr><th>What we saw</th><th>What we changed</th></tr><tr><td><span class="edit">[e.g. users skipped location]</span></td><td><span class="edit">[e.g. made it a required dropdown]</span></td></tr></table></div></li>
+</ol>
+<h2>What we know and do not know</h2>
+<div class="scroll"><table><tr><th>We know</th><th>We still need to learn</th></tr>
+<tr><td>Residents use many channels</td><td>Which channel they prefer</td></tr><tr><td>Complaints are hard to track</td><td>How often they are missed</td></tr>
+<tr><td>Residents rarely get updates</td><td>How often they expect updates</td></tr><tr><td>Staff get requests from different sources</td><td>How staff decide what comes first</td></tr></table></div></main><footer class="wrap" id="foot"></footer><script src="app.js"></script></body></html>

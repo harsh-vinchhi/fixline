@@ -1,0 +1,13 @@
+<!DOCTYPE html><html lang="en"><head><title>Log in or register | Fixline</title><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Figtree:wght@400;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body data-page="login"><header class="top" id="nav"></header>
+<main class="wrap narrow"><h1>Welcome to Fixline</h1>
+<div class="chips" role="group" aria-label="Choose"><button type="button" id="tl" aria-pressed="true">Log in</button><button type="button" id="tr" aria-pressed="false">New resident? Register</button></div>
+<p class="box warn" id="msg" role="alert" hidden></p>
+<form id="lf" class="box"><p class="hint">Residents, staff and managers all log in here. You will land on your own page.</p>
+<label for="le">Email</label><input type="email" id="le" required autocomplete="email"><label for="lp">Password</label><input type="password" id="lp" required autocomplete="current-password">
+<p style="margin-top:1rem"><button class="btn" type="submit">Log in</button></p></form>
+<form id="rf" class="box" hidden><p class="hint">Resident accounts only. Staff accounts are created by the manager.</p>
+<label for="rn">Full name</label><input type="text" id="rn" required autocomplete="name"><label for="re">Email</label><input type="email" id="re" required autocomplete="email">
+<label for="rfl">Flat number</label><input type="text" id="rfl" required placeholder="e.g. A-204"><label for="rp">Password (at least 6 characters)</label><input type="password" id="rp" required minlength="6" autocomplete="new-password">
+<p style="margin-top:1rem"><button class="btn" type="submit">Create my account</button></p></form>
+<div class="box note" id="demo" hidden><h3>Demo accounts</h3><p>Demo accounts exist on this site: <b>aarav@fixline.demo</b> (resident), <b>ramesh@fixline.demo</b> (staff) and the manager account. The password is given in the project report.</p></div></main>
+<footer class="wrap" id="foot"></footer><script src="app.js"></script></body></html>
